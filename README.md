@@ -1,7 +1,7 @@
 # Serverless Stack Termination Protection Plugin
 
-[![npm version](https://badge.fury.io/js/serverless-stack-termination-protection.svg)](https://www.npmjs.com/package/serverless-stack-termination-protection)
-[![vulnerabilities](https://snyk.io/test/github/miguel-a-calles-mba/serverless-stack-termination-protection/badge.svg)](https://snyk.io/test/github/miguel-a-calles-mba/serverless-stack-termination-protection)
+[![npm version](https://badge.fury.io/js/serverless-stack-termination-protection.svg)](https://www.npmjs.com/package/@aldenquimby/serverless-stack-termination-protection)
+[![vulnerabilities](https://snyk.io/test/github/aldenquimby/serverless-stack-termination-protection/badge.svg)](https://snyk.io/test/github/aldenquimby/serverless-stack-termination-protection)
 
 ## Table of Contents
 
@@ -22,8 +22,6 @@ Following deployment, the Serverless Framework does not have the option to enabl
 - Node 8.x or greater.
 - NPM 6.x or greater.
 
-Use `serverless-stack-termination-protection@1` if you need support for Serverless Framework 2.x or below.
-
 ## Installation
 
 ### Installing the Serverless Framework
@@ -41,14 +39,14 @@ npm install -g serverless
 Install with **npm**:
 
 ```sh
-npm install --save-dev serverless-stack-termination-protection
+npm install --save-dev @aldenquimby/serverless-stack-termination-protection
 ```
 
 And then add the plugin to your `serverless.yml` file:
 
 ```yaml
 plugins:
-  - serverless-stack-termination-protection
+  - '@aldenquimby/serverless-stack-termination-protection'
 ```
 
 See the [example(s)](./examples).
@@ -96,7 +94,7 @@ Future version will:
 
 * Delete the stack forceably using `sls remove --force`.
 
-Please request features or report problems using the [issues](https://github.com/miguel-a-calles-mba/serverless-stack-termination-protection/issues) page.
+Please request features or report problems using the [issues](https://github.com/aldenquimby/serverless-stack-termination-protection/issues) page.
 
 ## License
 
