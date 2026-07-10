@@ -1,5 +1,5 @@
 {
-  "name": "serverless-stack-termination-protection",
+  "name": "@aldenquimby/serverless-stack-termination-protection",
   "version": "2.0.2",
   "description": "Serverless plugin to update the CloudFormation stack termination protection",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miguel-a-calles-mba/serverless-stack-termination-protection.git"
+    "url": "git+https://github.com/aldenquimby/serverless-stack-termination-protection.git"
   },
   "keywords": [
     "serverless",
@@ -23,8 +23,8 @@
   "author": "Miguel A. Calles, MBA <miguelacallesmba@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miguel-a-calles-mba/serverless-stack-termination-protection/issues"
+    "url": "https://github.com/aldenquimby/serverless-stack-termination-protection/issues"
   },
-  "homepage": "https://github.com/miguel-a-calles-mba/serverless-stack-termination-protection#readme",
+  "homepage": "https://github.com/aldenquimby/serverless-stack-termination-protection#readme",
   "dependencies": {}
 }

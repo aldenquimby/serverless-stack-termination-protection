@@ -9,4 +9,4 @@ functions:
     handler: myFunction.handler
 
 plugins:
-  - serverless-stack-termination-protection
+  - '@aldenquimby/serverless-stack-termination-protection'
