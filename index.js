@@ -4,6 +4,8 @@
 
 'use strict';
 
+const { CloudFormationClient, UpdateTerminationProtectionCommand } = require('@aws-sdk/client-cloudformation');
+
 /**
  * Class for the Serverless plugin.
  */
@@ -74,23 +76,16 @@ class StackTerminationProtection {
     /**
      * Update the AWS CloudFormation stack termination protection.
      * @param {boolean} isEnabled
-     * @return {Promise<string | Error>}
+     * @return {Promise<string>}
      */
-    updateTerminationProtection(isEnabled) {
-        const params = {
+    async updateTerminationProtection(isEnabled) {
+        const client = new CloudFormationClient(await this.provider.getAwsSdkV3Config());
+        const command = new UpdateTerminationProtectionCommand({
             EnableTerminationProtection: isEnabled,
             StackName: this.stackName,
-        };
-        return new Promise((resolve, reject) => {
-            this.provider
-                .request(
-                    'CloudFormation',
-                    'updateTerminationProtection',
-                    params
-                )
-                .then((data) => resolve(data.StackId))
-                .catch((err) => reject(err));
         });
+        const data = await client.send(command);
+        return data.StackId;
     }
 }
 
