@@ -26,5 +26,7 @@
     "url": "https://github.com/aldenquimby/serverless-stack-termination-protection/issues"
   },
   "homepage": "https://github.com/aldenquimby/serverless-stack-termination-protection#readme",
-  "dependencies": {}
+  "dependencies": {
+    "@aws-sdk/client-cloudformation": "^3.1075.0"
+  }
 }
